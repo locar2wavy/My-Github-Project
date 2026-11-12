@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlo Basilio Jr. | Aspiring Web Developer Portfolio</title>
+    <style>
+        :root {
+            --ink: #1d2433;
+            --muted: #5a6478;
+            --paper: #f7f8fa;
+            --accent: #2457c5;
+            --line: #d5dae3;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.7;
+            color: var(--ink);
+            background: var(--paper);
+        }
+        header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+        header { padding-top: 48px; padding-bottom: 8px; }
+        h1, h2, h3, nav, th, label, button {
+            font-family: "Trebuchet MS", Verdana, sans-serif;
+        }
+        h1 { font-size: 2.2rem; margin: 0 0 4px; }
+        h2 { font-size: 1.4rem; margin-top: 0; }
+        .tagline { color: var(--muted); font-size: 1.1rem; margin-top: 0; }
+        nav { margin-top: 20px; }
+        nav a { margin-right: 14px; }
+        a { color: var(--accent); }
+        a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 2px;
+        }
+        hr { border: 0; border-top: 1px solid var(--line); max-width: 760px; margin: 28px auto; }
+        section { margin-bottom: 40px; }
+        img { border-radius: 50%; float: left; margin: 4px 18px 8px 0; }
+        #about::after { content: ""; display: block; clear: both; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; }
+        th { background: #e9edf5; }
+        article { border-left: 4px solid var(--accent); padding-left: 16px; margin-bottom: 20px; }
+        article h3 { margin-bottom: 4px; }
+        form label { display: block; margin-top: 12px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 8px; font: inherit; border: 1px solid var(--line); border-radius: 4px; }
+        textarea { min-height: 110px; }
+        button {
+            margin-top: 14px; padding: 10px 20px; font-size: 1rem;
+            background: var(--accent); color: #fff; border: 0; border-radius: 4px; cursor: pointer;
+        }
+        footer { padding-bottom: 40px; color: var(--muted); }
+    </style>
+</head>
+<body>
+
+    <header id="home">
+        <h1>Carlo Basilio Jr.'s Developer Portfolio</h1>
+        <p class="tagline">Hi! I'm Carlo Basilio Jr., an aspiring web developer who turns small ideas into pages people can actually use.</p>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#education">Education</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#goals">Goals</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="Profile.png.jpg" alt="Photo of Carlo Basilio Jr. smiling at the camera" width="150" height="150">
+            <p>I'm a 2nd-year BSIT student at National University Fairview who got hooked on web development the first time I changed a line of code and watched the page update instantly. I enjoy building things that are simple, readable, and useful to real people. Outside of coding, I like organizing my study notes, exploring new apps, and helping classmates debug their work. I'm using this portfolio to document what I learn and to show how I grow as a developer.</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Technical Skills</h2>
+            <ul>
+                <li>HTML5: semantic page structure, forms, and tables</li>
+                <li>CSS3: layouts, responsive design, and basic styling</li>
+                <li>JavaScript: DOM manipulation and simple interactivity</li>
+                <li>Git &amp; GitHub: version control, commits, and pushing to remote repositories</li>
+                <li>Python: basic scripting and problem solving</li>
+                <li>Problem solving: breaking big tasks into small, testable steps</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Educational Background</h2>
+            <table>
+                <tr><th>Category</th><th>Details</th></tr>
+                <tr><td>School</td><td>National University Fairview</td></tr>
+                <tr><td>Program</td><td>Bachelor of Science in Information Technology (BSIT)</td></tr>
+                <tr><td>Year Level</td><td>2nd Year</td></tr>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <article>
+                <h3>Project 1: Study Buddy Planner</h3>
+                <p>A web app where students list subjects, deadlines, and exam dates in one place. It would show upcoming tasks first and let users tick them off as they finish. Built with HTML, CSS, and JavaScript. <a href="https://github.com/your-username/study-buddy-planner" target="_blank" rel="noopener">View repository</a></p>
+            </article>
+            <article>
+                <h3>Project 2: Campus Canteen Menu</h3>
+                <p>A mobile-friendly menu page for a school canteen that lists daily meals, prices, and allergen notes in clear tables. The goal is to help students decide quickly and reduce queues at lunch. Proposed stack: HTML and CSS, with JavaScript filters later.</p>
+            </article>
+            <article>
+                <h3>Project 3: Personal Reading Log</h3>
+                <p>A simple site for tracking books I've read, with short reviews and ratings. It's a practice project for working with lists, forms, and saving data in the browser.</p>
+            </article>
+        </section>
+
+        <section id="goals">
+            <h2>My Career Goals</h2>
+            <ol>
+                <li>Master the front-end fundamentals (HTML, CSS, and JavaScript) and build at least five complete projects.</li>
+                <li>Learn a front-end framework such as React and a back-end language so I can build full-stack applications.</li>
+                <li>Contribute to an open-source project on GitHub and collaborate with other developers.</li>
+                <li>Land a junior web developer role or internship within the next two years.</li>
+            </ol>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email:
+                <a href="mailto:yourname@example.com">Contact via Email</a>
+            </p>
+            <p>Find my code on <a href="https://github.com/locar2wavy/My-Github-Project" target="_blank" rel="noopener">GitHub</a>.</p>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="button">Send Message</button>
+            </form>
+            <p><small>Note: This form is a visual prototype only.</small></p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Carlo Basilio Jr. All rights reserved.</p>
+        <p>Thanks for visiting. Let's build something great together! <a href="#home">Back to top</a></p>
+    </footer>
+
+</body>
+</html>
